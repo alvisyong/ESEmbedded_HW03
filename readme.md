@@ -53,4 +53,6 @@ This is the hw03 sample. Please follow the steps below.
 
 --------------------
 
-**★★★ Please take your note here ★★★**
+我觀察到的結果是 我們輸入的參數會先從r0 r1 r2開始存入 如果輸入的參數超過五個 第五個參數會存到stak裡
+，參數回傳則是從r0回傳，若為64位元由r0 r1回傳。
+r4 到r11則存區域變數，在進入函式時，函式如果要用到r4到r10這些暫存器 必須先儲存暫存器裡的值，跳出函數前復原。
